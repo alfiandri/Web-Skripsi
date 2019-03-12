@@ -1,0 +1,324 @@
+.dataTables_length select{
+    display: block!important;
+    overflow: hidden;
+    height: 2.5em;
+    padding: 0 10px!important;
+    margin-top: 6px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.dataTables_length select{
+    float: left;
+    padding: 0;
+}
+
+.dataTables_length{
+    position: relative;
+    width: 100px;
+    float: left;
+}
+
+label{
+    color: #444;
+}
+
+.dataTables_filter{
+    position: relative;
+    float: right;
+    width: 180px;
+}
+
+.dt-buttons{
+    position: relative;
+    float: left;
+}
+
+.dt-button{
+    background-color: #fff;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+    margin-top: 22px;
+}
+
+.dt-button:hover{
+    background-color: #fbfbfb;
+}
+
+@media (max-width: 700px){
+    .dt-button{
+        display: block;
+        width: 100px;
+        margin-top: 0;
+        margin-bottom: 4px;
+    }
+}
+
+@media (max-width: 450px){
+    .dataTables_filter{
+        width: 120px;
+    }
+
+    .display{
+        margin-top: 140px;
+    }
+}
+
+.display th,
+.display td{
+    border: 1px solid #ddd;
+    padding: 8px 6px;
+}
+
+.dataTables_filter input{
+    height: 2em!important;
+    border-bottom: 1px solid #ddd!important;
+}
+
+.dataTables_filter:before{     position: absolute;     top: 20px;     left:
+-34px;     font-family: 'Material Icons';     content: "search";     font-
+size: 30px; } 
+
+.dataTables_processing {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:100%;
+    height:40px;
+    margin-left:-50%;
+    margin-top:-25px;
+    padding-top:20px;
+    text-align:center;
+    font-size:1.2em;
+    color: black;
+    background-color: white;
+} 
+
+table.dataTable th{     
+    position: relative; 
+}
+
+/* table.dataTable thead .sorting:before {
+    font-family: 'Material Icons';
+    content: "filter_list";
+    font-size: 10px;
+    position: absolute;
+    top: 4px;
+    right: 8px;
+}
+
+table.dataTable thead .sorting_asc:before {
+    font-family: 'Material Icons';
+    content: "filter_list";
+    font-size: 10px;
+    position: absolute;
+    top: 4px;
+    right: 8px;
+} */
+
+.dataTables_info{
+    float: left;
+    margin-top: 16px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.dataTables_paginate{
+    float: right;
+    margin-top: 20px;
+}
+
+.paginate_button{
+    border: 1px solid #ddd;
+    border-right: none;
+    padding: 6px 16px;
+}
+
+.paginate_button.current{
+    background-color: #eee;
+}
+
+.paginate_button.next{
+    border-right: 1px solid #ddd;
+}
+
+@media (max-width: 600px){
+    .dataTables_info,
+    .dataTables_paginate{
+        float: none;
+        display: block;
+    }
+}
+
+table.dataTable thead th,
+table.dataTable tfoot th {
+  font-weight: bold;
+}
+
+/* table.dataTable thead th:active,
+table.dataTable thead td:active {
+  outline: none;
+}
+ */
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+  cursor: pointer;
+  *cursor: hand;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+table.dataTable tbody tr {
+  background-color: #ffffff;
+}
+table.dataTable tbody tr.selected {
+  background-color: #B0BED9;
+}
+table.dataTable tbody th,
+table.dataTable tbody td {
+  /* padding: 8px 10px; */
+}
+/* table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
+  border-top: 1px solid #ddd;
+} */
+table.dataTable.row-border tbody tr:first-child th,
+table.dataTable.row-border tbody tr:first-child td, table.dataTable.display tbody tr:first-child th,
+table.dataTable.display tbody tr:first-child td {
+  border-top: none;
+}
+table.dataTable.cell-border tbody th, table.dataTable.cell-border tbody td {
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+table.dataTable.cell-border tbody tr th:first-child,
+table.dataTable.cell-border tbody tr td:first-child {
+  border-left: 1px solid #ddd;
+}
+table.dataTable.cell-border tbody tr:first-child th,
+table.dataTable.cell-border tbody tr:first-child td {
+  border-top: none;
+}
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
+  background-color: #f9f9f9;
+}
+table.dataTable.stripe tbody tr.odd.selected, table.dataTable.display tbody tr.odd.selected {
+  background-color: #acbad4;
+}
+table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
+  background-color: #f6f6f6;
+}
+table.dataTable.hover tbody tr:hover.selected, table.dataTable.display tbody tr:hover.selected {
+  background-color: #aab7d1;
+}
+table.dataTable.order-column tbody tr > .sorting_1,
+table.dataTable.order-column tbody tr > .sorting_2,
+table.dataTable.order-column tbody tr > .sorting_3, table.dataTable.display tbody tr > .sorting_1,
+table.dataTable.display tbody tr > .sorting_2,
+table.dataTable.display tbody tr > .sorting_3 {
+  background-color: #fafafa;
+}
+table.dataTable.order-column tbody tr.selected > .sorting_1,
+table.dataTable.order-column tbody tr.selected > .sorting_2,
+table.dataTable.order-column tbody tr.selected > .sorting_3, table.dataTable.display tbody tr.selected > .sorting_1,
+table.dataTable.display tbody tr.selected > .sorting_2,
+table.dataTable.display tbody tr.selected > .sorting_3 {
+  background-color: #acbad5;
+}
+table.dataTable.display tbody tr.odd > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
+  background-color: #f1f1f1;
+}
+table.dataTable.display tbody tr.odd > .sorting_2, table.dataTable.order-column.stripe tbody tr.odd > .sorting_2 {
+  background-color: #f3f3f3;
+}
+table.dataTable.display tbody tr.odd > .sorting_3, table.dataTable.order-column.stripe tbody tr.odd > .sorting_3 {
+  background-color: whitesmoke;
+}
+table.dataTable.display tbody tr.odd.selected > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_1 {
+  background-color: #a6b4cd;
+}
+table.dataTable.display tbody tr.odd.selected > .sorting_2, table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_2 {
+  background-color: #a8b5cf;
+}
+table.dataTable.display tbody tr.odd.selected > .sorting_3, table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_3 {
+  background-color: #a9b7d1;
+}
+table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
+  background-color: #fafafa;
+}
+table.dataTable.display tbody tr.even > .sorting_2, table.dataTable.order-column.stripe tbody tr.even > .sorting_2 {
+  background-color: #fcfcfc;
+}
+table.dataTable.display tbody tr.even > .sorting_3, table.dataTable.order-column.stripe tbody tr.even > .sorting_3 {
+  background-color: #fefefe;
+}
+table.dataTable.display tbody tr.even.selected > .sorting_1, table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_1 {
+  background-color: #acbad5;
+}
+table.dataTable.display tbody tr.even.selected > .sorting_2, table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_2 {
+  background-color: #aebcd6;
+}
+table.dataTable.display tbody tr.even.selected > .sorting_3, table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_3 {
+  background-color: #afbdd8;
+}
+table.dataTable.display tbody tr:hover > .sorting_1, table.dataTable.order-column.hover tbody tr:hover > .sorting_1 {
+  background-color: #eaeaea;
+}
+table.dataTable.display tbody tr:hover > .sorting_2, table.dataTable.order-column.hover tbody tr:hover > .sorting_2 {
+  background-color: #ececec;
+}
+table.dataTable.display tbody tr:hover > .sorting_3, table.dataTable.order-column.hover tbody tr:hover > .sorting_3 {
+  background-color: #efefef;
+}
+table.dataTable.display tbody tr:hover.selected > .sorting_1, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_1 {
+  background-color: #a2aec7;
+}
+table.dataTable.display tbody tr:hover.selected > .sorting_2, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_2 {
+  background-color: #a3b0c9;
+}
+table.dataTable.display tbody tr:hover.selected > .sorting_3, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_3 {
+  background-color: #a5b2cb;
+}
+.dataTable th {
+    background-color: #f6f6f6;
+}
+/* responsive */
+div.table-responsive > div.dataTables_wrapper > div.row {
+  margin: 0;
+}
+div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:first-child {
+  padding-left: 0;
+}
+div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:last-child {
+  padding-right: 0;
+}
+div.dt-button-info {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  margin-top: -100px;
+  margin-left: -200px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  text-align: center;
+  z-index: 99;
+}
+
+div.dt-button-info h2 {
+  padding: 0.5em;
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 1px solid #eee;
+  font-size: 40px;
+}
+div.dt-button-info > div {
+  padding: 1em;
+  background-color: #fcfcfc;
+}
