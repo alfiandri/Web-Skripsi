@@ -1,4 +1,4 @@
-# Data mining Implementation to Predict the Price of Gold Metals Using Multiple Linear Regression Methods
+# Data Mining Implementation to Predict the Price of Gold Metals Using Multiple Linear Regression Methods
 Implementasi Data Mining Untuk Memprediksi Harga Logam Mulia Emas Menggunakan Metode Regresi Linear Berganda
 
 ## Make sure your server meets the following requirements:
